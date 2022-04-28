@@ -24,4 +24,6 @@ MCPI plugin system for servers
 > Make the Discord bot optional  
 > Add a separate configuration file  
 > Add a CLI for setting up the configuration file  
+> Add proxy support for low-level plugins  
+> Add plugin development documentation  
 > Upload the actual code.
