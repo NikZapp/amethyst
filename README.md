@@ -16,14 +16,25 @@ MCPI plugin system for servers
 - Then, enable developer mode in Discord, right click the channel you want to use with Amethyst, copy the ID and paste it in the beginning of `main.py`  
 - You will also need to choose a status for the bot. It will show up as **Playing** <insert status here> in Discord.
 3. MCPI  
-- You must have the MCPI library installed, and the server MOTD must be specified in the beginning of `main.py`.  
-- If this is not done, a feedback loop of messages will appear.
+- The server MOTD must be specified in the beginning of `main.py`.  
+- If this is not done, a feedback loop of messages will appear.  
+- The server MOTD **can** have spaces in it.  
+- Any player joining **cannot** have spaces in their username.
+4. Plugin directory
+- While the defaut one is `./plugins`, you can specify a different one.  
+5. Dependencies  
+- Amethyst automatically installs the needed libraries: `colorama`, `discord` and of course `mcpi`
+  
+# Launching
+After you have completed the setup, you can launch Amethyst by going in its directory and, while using the terminal, type `python3 main.py`.  
+You will need to specify the path to the latest log file.
+
 
 # TODO
-> Finish this README  
 > Make the Discord bot optional  
 > Add a separate configuration file  
 > Add a CLI for setting up the configuration file  
 > Add proxy support for low-level plugins  
 > Add plugin development documentation  
-> Upload the actual code.
+> Upload the actual code.  
+> Explain reasoning behind banning spaces in usernames.  
