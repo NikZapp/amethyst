@@ -1,5 +1,6 @@
 # Amethyst
-MCPI plugin system for servers
+MCPI plugin system for servers  
+CURRENTLY UNDER A MAJOR REWORK.  
 
 # Setup
 1. Logging  
