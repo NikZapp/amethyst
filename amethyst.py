@@ -19,6 +19,7 @@ import os
 import sys
 import asyncio
 
+
 def handle_plugin_event(event_path, event_args):
     event_args["amethyst"] = amethyst
     for plugin in amethyst["plugins"]:
@@ -70,19 +71,15 @@ def handle_local_event(plugin, event_path, event_args):
         pass  # print('Unknown:', type(events))
 
 
-try:
-    from conf import config
-except:
-    if __name__ == "__main__": print("conf.py import failed. Using default settings.")
-    config = dict(
-        path_to_plugins="plugins",
-        debug=True,
-        event=handle_plugin_event,
-        local_event=handle_local_event,
-        asyncio_loop=asyncio.get_event_loop(),
-    )
+amethyst = dict(
+    path_to_plugins="plugins",
+    version="DEV_2.1",
+    debug=True,
+    event=handle_plugin_event,
+    local_event=handle_local_event,
+    asyncio_loop=asyncio.get_event_loop(),
+)
 
-amethyst = config
 
 def main():
     if not os.path.exists(amethyst["path_to_plugins"]):
