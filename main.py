@@ -43,7 +43,7 @@ def handle_local_event(plugin, event_path, event_args):
 
 
 amethyst = dict(path_to_plugins='./plugins',
-                version='DEV_2.0',
+                version='DEV_2.1',
                 debug=True,
                 event=handle_plugin_event,
                 local_event=handle_local_event,
