@@ -8,4 +8,4 @@ The only thing you may need to set up is the plugin directory. It is configured 
 After you have completed the setup, you can launch Amethyst by going in its directory and, while using the terminal, type `python3 main.py`.  
 
 # TODO
-> Add plugin development documentation  
+- Add plugin development documentation  
